@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.product-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.product-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+.product-card p {
+  font-size: 15px;
+}
