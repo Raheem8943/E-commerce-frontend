@@ -1,10 +1,10 @@
 import "./App.css";
-import ProductList from "./components/ProductList";
+import ProductListSWR from "./components/ProductListSWR";
 
 function App() {
   return (
     <div>
-      <ProductList />
+      <ProductListSWR />
     </div>
   );
 }
