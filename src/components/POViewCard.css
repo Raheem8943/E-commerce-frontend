@@ -1,0 +1,14 @@
+.POcard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 10px;
+}
+.first-div {
+  display: flex;
+  width: 60%;
+}
+.second-div {
+  width: 40%;
+}

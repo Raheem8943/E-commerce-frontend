@@ -1,5 +1,6 @@
 import useSWR from "swr";
 import ProductCard from "./ProductCard";
+import "./ProductList.css";
 export default function ProductListSWR() {
   async function fetchProductSWR(url) {
     const response = await fetch(url);
@@ -13,7 +14,7 @@ export default function ProductListSWR() {
     data: products,
     error,
     isLoading,
-  } = useSWR("https://fakestoreapi.com/products", fetchProductSWR);
+  } = useSWR("https://api.escuelajs.co/api/v1/products", fetchProductSWR);
 
   if (isLoading) return <p className="isLoading">LOADING...</p>;
   if (error) return <p>error</p>;

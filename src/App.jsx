@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import ProductOverView from "./components/POViewList";
 function App() {
   return (
     <BrowserRouter>
@@ -13,12 +14,16 @@ function App() {
           <NavLink to="/contact">Contact</NavLink>
           <NavLink to="/about">About</NavLink>
         </div>
-        <div className="cart"></div>
+        <div className="cart">Cart</div>
       </div>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/Contact" element={<Contact />}></Route>
         <Route path="/About" element={<About />}></Route>
+        <Route
+          path="/product/:product_id"
+          element={<ProductOverView />}
+        ></Route>
       </Routes>
     </BrowserRouter>
   );

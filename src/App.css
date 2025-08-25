@@ -6,3 +6,7 @@
 .isLoading {
   font-weight: bold;
 }
+
+.nav-bar a.active {
+  color: red;
+}
