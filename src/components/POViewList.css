@@ -6,7 +6,9 @@
 }
 .product-View-list {
   display: grid;
-
+}
+.product-View-list {
+  display: flex;
   gap: 20px;
   padding: 20px;
   width: 100%;

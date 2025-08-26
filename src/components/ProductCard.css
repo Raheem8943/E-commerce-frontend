@@ -6,7 +6,10 @@
   padding: 10px;
   width: 280px;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 .product-card img {
   width: 100%;
   height: 200px;

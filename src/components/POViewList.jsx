@@ -1,7 +1,6 @@
 import { useParams } from "react-router";
 import useSWR from "swr";
-import POcard from "./POViewCard";
-export default function ProductOverView() {
+export default function POViewList() {
   const { product_id } = useParams();
   async function fetchProduct(url) {
     const response = await fetch(url);
@@ -20,12 +19,23 @@ export default function ProductOverView() {
     fetchProduct
   );
 
+  console.log(product);
+
   if (isLoading) return <p className="isLoading">LOADING...</p>;
-  if (error) return <p>error</p>;
+  if (error) return <p>Error</p>;
 
   return (
     <div className="product-View-list">
-      <POcard product={product} />
+      <div className="first-div">
+        <img src={product.images[0]} alt={product.name} />
+      </div>
+      <div className="second-div">
+        <p className="Pline-clamp">{product.description}</p>
+        <br />
+        <p className="price-tag">
+          price: $ <b>{product.price}</b>
+        </p>
+      </div>
     </div>
   );
 }

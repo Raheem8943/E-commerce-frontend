@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import ProductOverView from "./components/POViewList";
+import POViewList from "./components/POViewList";
 function App() {
   return (
     <BrowserRouter>
@@ -20,10 +20,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/Contact" element={<Contact />}></Route>
         <Route path="/About" element={<About />}></Route>
-        <Route
-          path="/product/:product_id"
-          element={<ProductOverView />}
-        ></Route>
+        <Route path="/product/:product_id" element={<POViewList />}></Route>
       </Routes>
     </BrowserRouter>
   );

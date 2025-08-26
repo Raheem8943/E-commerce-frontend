@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import "./ProductCard.css";
 export default function ProductCard({ product }) {
   return (
-    <Link to={`/products/${product.id}`}>
+    <Link to={`/product/${product.id}`}>
       <div className="product-card">
         <h3>{product.title}</h3>
         <br />
