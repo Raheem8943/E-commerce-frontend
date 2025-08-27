@@ -1,6 +1,7 @@
 import { useParams } from "react-router";
 import useSWR from "swr";
 export default function POViewList() {
+  console.log("adsf");
   const { product_id } = useParams();
   async function fetchProduct(url) {
     const response = await fetch(url);
