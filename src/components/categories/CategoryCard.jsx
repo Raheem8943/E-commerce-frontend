@@ -5,12 +5,16 @@ export default function CategoryCard({ category }) {
 
 
   return (
+    
     <Link to={`/${category.slug}`}>
       <div className="c_card">
         <div className="c_image">
           <img src={category.image} alt={category.name} />
         </div>
+        <br />
+        <div className="name_div">
         <h4>{category.name}</h4>
+        </div>
       </div>
     </Link>
   );

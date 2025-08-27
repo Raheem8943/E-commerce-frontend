@@ -21,11 +21,14 @@ export default function Categories() {
   if (error) return <p>Error</p>;
 
   return (
+    <div className="C_list">
+    <h1>Categories</h1>
     <div className="category_list">
-      <h1>Categories</h1>
       {categories.map((category) => (
         <CategoryCard key={category.id} category={category} />
       ))}
+      
+    </div>
     </div>
   );
 }

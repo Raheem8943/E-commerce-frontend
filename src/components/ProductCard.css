@@ -2,9 +2,10 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  border: 1px solid black;
+  border: 1px;
   padding: 10px;
   width: 280px;
+  background-color: rgba(222, 224, 184, 0.625);
 }
 a {
   text-decoration: none;
