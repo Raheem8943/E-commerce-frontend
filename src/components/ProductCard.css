@@ -1,11 +1,12 @@
 .product-card {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
   border: 1px;
   padding: 10px;
   width: 280px;
-  background-color: rgba(222, 224, 184, 0.625);
+  background: linear-gradient(to bottom,#ABC1FF,#F07B7B);
 }
 a {
   text-decoration: none;
@@ -15,6 +16,8 @@ a {
   width: 100%;
   height: 200px;
   object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 .product-card p {
   font-size: 15px;

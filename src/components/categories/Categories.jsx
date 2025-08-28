@@ -17,7 +17,7 @@ export default function Categories() {
   } = useSWR("https://api.escuelajs.co/api/v1/categories", fetchCategory);
 
 
-  if (isLoading) return <p className="isLoading">LOADING...</p>;
+  if (isLoading) return ;
   if (error) return <p>Error</p>;
 
   return (

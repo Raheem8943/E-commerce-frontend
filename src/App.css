@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  align-items: center;
+  padding: 20px;
 }
 .isLoading {
   font-weight: bold;
@@ -9,4 +11,16 @@
 
 .nav-bar a.active {
   color: red;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+}
+.W_name{
+  font-weight: bolder;
+  font-size: 80px;
+  color: goldenrod;
+  font-family: Arial, Helvetica, sans-serif;
 }
