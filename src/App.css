@@ -15,12 +15,24 @@
 .nav-bar{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 15px 30px;
   position: sticky;
 }
 .W_name{
   font-weight: bolder;
   font-size: 80px;
+  color: goldenrod;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Header_links{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+ 
+}
+.Header_links a{
+  font-size: 23px;
   color: goldenrod;
   font-family: Arial, Helvetica, sans-serif;
 }

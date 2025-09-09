@@ -4,16 +4,20 @@
   box-sizing: border-box;
   border-radius: 5px;
 }
-.product-View-list {
+.po_container{
   display: grid;
 }
 .product-View-list {
   display: flex;
+  flex-direction: column;
+}
+.second-div {
   gap: 20px;
   padding: 20px;
   width: 100%;
 }
-.first-div {
-  height: 320px;
+.first_div img {
+  height: 500px;
   width: 100%;
+  object-fit: cover;
 }

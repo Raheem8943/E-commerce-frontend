@@ -18,7 +18,6 @@ export default function ProductListSWR() {
 
   if (isLoading) return <p className="isLoading">LOADING...</p>;
   if (error) return <p>error</p>;
-
   return (
     <div className="product-list">
       {products.map((product) => {

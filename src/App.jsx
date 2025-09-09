@@ -8,17 +8,18 @@ import Clothes from "./pages/Clothes";
 import Electronics from "./pages/Electronics";
 import Shoes from "./pages/Shoes";
 import Miscellaneous from "./pages/Miscellaneous";
+import { ShoppingBag } from "lucide-react";
 function App() {
   return (
     <BrowserRouter>
       <div className="nav-bar">
         <div className="W_name">Estore</div>
-        <div className="Header-links">
+        <div className="Header_links">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           <NavLink to="/about">About</NavLink>
         </div>
-        <div className="cart">Cart</div>
+        <NavLink to="/cart"><ShoppingBag /></NavLink>
       </div>
       <Routes>
         <Route path="/" element={<Home />}></Route>

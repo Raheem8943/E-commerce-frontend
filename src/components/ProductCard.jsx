@@ -11,10 +11,12 @@ export default function ProductCard({ product }) {
         <div>
           <p className="line-clamp">{product.description}</p>
           <br />
-          <p className="price-tag">
-            price: $ <b>{product.price}</b>
-          </p>
+          <p className="price_tag">price: $ {product.price}</p>
+      
         </div>
+        <div className="cart_button">
+        <Link to={"/cart"}>Add to Cart</Link>
+       </div>
       </div>
     </Link>
   );
