@@ -16,19 +16,17 @@ export default function Categories() {
     isLoading,
   } = useSWR("https://api.escuelajs.co/api/v1/categories", fetchCategory);
 
-
-  if (isLoading) return ;
+  if (isLoading) return;
   if (error) return <p>Error</p>;
 
   return (
     <div className="C_list">
-    <h1>Categories</h1>
-    <div className="category_list">
-      {categories.map((category) => (
-        <CategoryCard key={category.id} category={category} />
-      ))}
-      
-    </div>
+      <h1 className="c-heading">Categories</h1>
+      <div className="category_list">
+        {categories.map((category) => (
+          <CategoryCard key={category.id} category={category} />
+        ))}
+      </div>
     </div>
   );
 }
