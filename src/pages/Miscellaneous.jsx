@@ -13,7 +13,10 @@ export default function Miscellaneous() {
     data: products,
     error,
     isLoading,
-  } = useSWR("https://api.escuelajs.co/api/v1/categories/5/products", fetchProductSWR);
+  } = useSWR(
+    "https://api.escuelajs.co/api/v1/categories/27/products",
+    fetchProductSWR
+  );
 
   if (isLoading) return <p className="isLoading">LOADING...</p>;
   if (error) return <p>error</p>;

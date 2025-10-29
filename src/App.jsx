@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import POViewList from "./components/POViewList";
 import Clothes from "./pages/Clothes";
+import Furniture from "./pages/Furniture";
 import Electronics from "./pages/Electronics";
 import Shoes from "./pages/Shoes";
 import Miscellaneous from "./pages/Miscellaneous";
@@ -15,11 +16,15 @@ function App() {
       <div className="nav-bar">
         <div className="W_name">Estore</div>
         <div className="Header_links">
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" end>
+            Home
+          </NavLink>
           <NavLink to="/contact">Contact</NavLink>
           <NavLink to="/about">About</NavLink>
         </div>
-        <NavLink to="/cart"><ShoppingBag /></NavLink>
+        <NavLink to="/cart">
+          <ShoppingBag />
+        </NavLink>
       </div>
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -28,6 +33,7 @@ function App() {
         <Route path="/Clothes" element={<Clothes />}></Route>
         <Route path="/Electronics" element={<Electronics />}></Route>
         <Route path="/Shoes" element={<Shoes />}></Route>
+        <Route path="/Furniture" element={<Furniture />}></Route>
         <Route path="/Miscellaneous" element={<Miscellaneous />}></Route>
         <Route path="/product/:product_id" element={<POViewList />}></Route>
       </Routes>

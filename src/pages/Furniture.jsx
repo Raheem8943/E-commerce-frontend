@@ -1,6 +1,6 @@
 import useSWR from "swr";
 import ProductCard from "../components/ProductCard";
-export default function Shoes() {
+export default function Furniture() {
   async function fetchProductSWR(url) {
     const response = await fetch(url);
     if (!response.ok) {
@@ -14,7 +14,7 @@ export default function Shoes() {
     error,
     isLoading,
   } = useSWR(
-    "https://api.escuelajs.co/api/v1/categories/26/products",
+    "https://api.escuelajs.co/api/v1/categories/25/products",
     fetchProductSWR
   );
 

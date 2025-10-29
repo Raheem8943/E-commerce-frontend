@@ -13,7 +13,10 @@ export default function Clothes() {
     data: products,
     error,
     isLoading,
-  } = useSWR("https://api.escuelajs.co/api/v1/categories/1/products", fetchProductSWR);
+  } = useSWR(
+    "https://api.escuelajs.co/api/v1/categories/23/products",
+    fetchProductSWR
+  );
 
   if (isLoading) return <p className="isLoading">LOADING...</p>;
   if (error) return <p>error</p>;

@@ -1,11 +1,9 @@
 import { Link } from "react-router";
 import "./Category.css";
 export default function CategoryCard({ category }) {
-  console.log(category);
-
+  console.log("category:", category);
 
   return (
-    
     <Link to={`/${category.slug}`}>
       <div className="c_card">
         <div className="c_image">
@@ -13,7 +11,7 @@ export default function CategoryCard({ category }) {
         </div>
         <br />
         <div className="name_div">
-        <h4>{category.name}</h4>
+          <h4>{category.name}</h4>
         </div>
       </div>
     </Link>
